@@ -29,6 +29,7 @@ a:hover {
 	position: relative;
 	max-width: 960px;
 	margin: 0 auto;
+	width: 100%;
 }
 
 .left {
@@ -39,6 +40,7 @@ a:hover {
 	top: 0;
 	left: 0;
 	background-color: #BB68FF;
+	z-index: 1;
 
 }
 
@@ -49,6 +51,7 @@ a:hover {
 	top: 0;
 	left: 33.33333333333333%;
 	background-color: #5FCDFF;
+	z-index: 1;
 
 }
 
@@ -59,4 +62,33 @@ a:hover {
 	top: 0;
 	left: 66.66666666666667%;
 	background-color: #A3FF6D;
+	z-index: 1;
+}
+
+.avenger {
+	position: fixed;
+	left: 10px;
+	bottom:10px;
+	width: 50px;
+
+}
+
+img {
+	width: 100%
+}
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
+
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+	.middle, .left, .right { position: static; width: 100%}
+	img {display: none;}
+	
+}
+
+@media only screen and (max-width: 40em) { 
+	.middle, .left, .right { position: static; width: 100%}
+	img {display: none;}
+
 }
